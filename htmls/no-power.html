@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>No Gives the Power That Yes Cannot Give</title>
+  <meta name="description" content="A personal reflection on the power of saying no, setting boundaries, and choosing honesty in relationships. Discover why a true “no” creates more meaningful “yeses.”">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="No Gives the Power That Yes Cannot Give">
+  <meta property="og:description" content="A personal reflection on the power of saying no, setting boundaries, and choosing honesty in relationships. Discover why a true “no” creates more meaningful “yeses.”">
+  <meta property="og:image" content="https://shirugautam-dev.github.io/Blog/Images/Self_org.jpg">
+  <meta property="og:url" content="https://shirugautam-dev.github.io/Blog/htmls/no-power.html">
+  <meta property="og:type" content="article">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <div class="content"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+
+  <script>
+    const slug = "no-power";
+
+    fetch("../articles/" + slug + ".md")
+      .then(res => res.text())
+      .then(md => {
+        document.querySelector(".content").innerHTML = `
+          <article class="article-body">
+            <div class="home-header">
+              <a href="../index.html">← Back to Home</a>
+            </div>
+
+            ${marked.parse(md)}
+          </article>
+        `;
+      });
+  </script>
+
+</body>
+</html>

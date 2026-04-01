@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Imposter Syndrome: Do You Feel It Too, or Am I the Only One?</title>
+  <meta name="description" content="From self-doubt to self-belief—an honest reflection on imposter syndrome, early career fear, and the courage to trust your own capability.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Imposter Syndrome: Do You Feel It Too, or Am I the Only One?">
+  <meta property="og:description" content="From self-doubt to self-belief—an honest reflection on imposter syndrome, early career fear, and the courage to trust your own capability.">
+  <meta property="og:image" content="https://shirugautam-dev.github.io/Blog/Images/Self_org.jpg">
+  <meta property="og:url" content="https://shirugautam-dev.github.io/Blog/htmls/imposter.html">
+  <meta property="og:type" content="article">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <div class="content"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+
+  <script>
+    const slug = "imposter";
+
+    fetch("../articles/" + slug + ".md")
+      .then(res => res.text())
+      .then(md => {
+        document.querySelector(".content").innerHTML = `
+          <article class="article-body">
+            <div class="home-header">
+              <a href="../index.html">← Back to Home</a>
+            </div>
+
+            ${marked.parse(md)}
+          </article>
+        `;
+      });
+  </script>
+
+</body>
+</html>
