@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Srijana's thoughts</title>
+    <link></link>
+    <description>Low-Maintenance Is a Lie We Tell Ourselves</description>
+
+    <item>
+      <title>Low-Maintenance Is a Lie We Tell Ourselves</title>
+      <link>http://127.0.0.1:5500/?post=low-maintenance</link>
+      <description>Being easy-going shouldn’t cost you your voice. Learn why expressing needs respectfully is essential for emotional well-being.</description>
+      <pubDate>Mon, 23 Mar 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>I Accept Luck Without Surrendering to Fate</title>
+      <link>http://127.0.0.1:5500/?post=luck-fate</link>
+      <description>Do luck and fate exist, or are they just stories we tell ourselves to make sense of a chaotic universe?</description>
+      <pubDate>Mon, 23 Mar 2026 10:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>
